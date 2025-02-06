@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="backdrop"></div>
+    
+    <h1>Do My Homework</h1>
+
+    <section id="section-tasks">
+        <div id="div-ask-question">
+            <h2>Ask question</h2>
+            <button>question</button>
+        </div>
+    </section>
+
+    <section id="section-tasks">
+        <h2>Tasks</h2>
+        <ul id="ul-tasks"></ul>
+    </section>
+
+
+    <section id="section-add-task">
+        <h3>Write your question here</h3>
+        <br>
+        <p>Write your question text here</p>
+        <textarea id="input-task"></textarea>
+        <br>
+        <p>Choose the subject here</p>
+        <br>
+        <input id="input-task-subject" type="text">
+        <br>
+        <p>Enter due date</p>
+        <br>
+        <input id="input-task-due-date" type="date">
+        <button>Submit</button>
+        <button>Cancel</button>
+    </section>
+
+    <section id="section-confirm-cancel">
+        <h2>Are you sure?</h2>
+        <p>Do you really want to delete this task?</p>
+        <button class="btn btn--cancel">Cancel</button>
+        <button class="btn btn-delete">Delete</button>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
