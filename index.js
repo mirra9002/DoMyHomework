@@ -71,8 +71,11 @@ const addTask = () => {
     console.log(tasks);
     
     const newTask = document.createElement('li');
+
+    const truncatedText = task.text.length < 70 ? task.text : task.text.substring(0, 70) + '...';  
+
     newTask.innerHTML = `<strong>Subject:</strong> ${task.subject}<br>
-                     <strong>Text:</strong> ${task.text}<br>
+                     <strong>Text:</strong> ${truncatedText}<br>
                      <strong>Due date:</strong> ${task.dueDate}<br>
                      <button id="btn-answer-question">Answer</button>`;
     ulTasks.appendChild(newTask);
@@ -82,7 +85,6 @@ const addTask = () => {
         deleteTask(task.id);
         ulTasks.removeChild(newTask);
         console.log('Task deleted');
-        // изменить функционал на открытие отдельного окна с этим заданием и ответом на него
     });
 
     newTask.addEventListener('click', () => {

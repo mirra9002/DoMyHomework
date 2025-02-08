@@ -6,21 +6,32 @@
     <title>Main page</title>
     <link rel="stylesheet" href="style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div id="backdrop"></div>
+    <section id="section-header">
+        <h1>Do My Homework</h1>
+        <p>Manage your tasks easily and efficiently</p>
+        <hr>
+    </section>
     
-    <h1>Do My Homework</h1>
+
+    <div id="backdrop"></div>
+
+    
 
     <section id="section-tasks">
         <div id="div-ask-question">
-            <h2>Ask question</h2>
-            <button>question</button>
+            <h2>Задай свой вопрос</h2>
+            <button>Вопрос</button>
         </div>
     </section>
 
     <section id="section-tasks">
-        <h2>Tasks</h2>
+        <h2>Задания</h2>
         <ul id="ul-tasks"></ul>
     </section>
 
@@ -32,15 +43,17 @@
         <textarea id="input-task"></textarea>
         <br>
         <p>Choose the subject here</p>
-        <br>
-        <input id="input-task-subject" type="text">
+        <select id="input-task-subject">
+            <option value="" disabled selected>select your subject here</option>
+        </select>
         <br>
         <p>Enter due date</p>
-        <br>
         <input id="input-task-due-date" type="date">
+        <br>
         <button>Submit</button>
         <button>Cancel</button>
     </section>
+    
 
     <section id="section-confirm-cancel">
         <h2>Are you sure?</h2>
@@ -50,5 +63,6 @@
     </section>
 
     <script src="index.js"></script>
+    <script src="subjects.js"></script>
 </body>
 </html>
