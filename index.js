@@ -66,8 +66,6 @@ const addTask = () => {
     inputTask.value = '';
     inputTaskSubject.value = '';
     inputTaskDueDate.value = '';
-    
-    tasks.push(task);
     console.log(tasks);
     
     const newTask = document.createElement('li');
@@ -82,9 +80,11 @@ const addTask = () => {
     const buttonAnswerQuestion = newTask.querySelector('#btn-answer-question');
 
     buttonAnswerQuestion.addEventListener('click', () => {
-        deleteTask(task.id);
-        ulTasks.removeChild(newTask);
-        console.log('Task deleted');
+        // deleteTask(task.id);
+        // ulTasks.removeChild(newTask);
+        // console.log('Task deleted');
+        localStorage.setItem('selectedTask', JSON.stringify(task));
+        window.open('task.html', '_blank');
     });
 
     newTask.addEventListener('click', () => {
