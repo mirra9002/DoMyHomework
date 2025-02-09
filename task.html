@@ -5,12 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="task-style.css">
+    <link rel="stylesheet" href="header-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
 
 </head>
 <body>
+
+    <div id="backdrop"></div>
+    <header id="main-header">
+        <div id="header-left">
+            <a href="index.html" id="site-logo">Do My Homework</a>
+        </div>
+        <nav id="header-right">
+            <a href="#">Login</a>
+            <a href="#">Signup</a>
+            <a href="#">Ask Question</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
 
     <section id="section-task">
         <div id="div-task-info">
@@ -22,15 +36,21 @@
     </section>
 
     <section id="section-answer">
-        <div id="task-answer">
-            <p></p>
-            <button id="bt-answer">Say Thanks</button>
-        </div>
+        
     </section>
 
     <section id="section-type-answer">
         <h3>Write your answer here</h3>
         <textarea id="input-answer"></textarea>
+        <button id="bt-submit-answer">Submit</button>
+        <button id="bt-cancel-answer">Cancel</button>
+    </section>
+
+    <section id="section-confirm-cancel">
+        <h2>Are you sure?</h2>
+        <p>Do you really want to delete this answer?</p>
+        <button class="btn btn-cancel">Cancel</button>
+        <button class="btn btn-delete">Delete</button>
     </section>
 
     <script src="task.js"></script>

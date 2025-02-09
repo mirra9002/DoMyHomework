@@ -13,7 +13,6 @@ const buttonCancelDeleteTask = document.querySelector('#section-confirm-cancel')
 const buttonConfirmDeleteTask = document.querySelector('#section-confirm-cancel').querySelector('button:last-of-type');
 
 
-
 const divTasks = document.querySelector('#section-tasks').querySelector('div');
 const ulTasks = document.getElementById('ul-tasks');
 const backdrop = document.getElementById('backdrop');
